@@ -1,7 +1,16 @@
 .Layout-header {
-  background-color: bisque;
+  background-color: whitesmoke;
 }
 
 .Layout-footer {
-  background-color: bisque;
+  background-color: whitesmoke;
+}
+
+.Layout_language {
+  margin-left: 90%;
+}
+
+.Layout_language_list {
+  display: flex;
+  flex-wrap: wrap;
 }
