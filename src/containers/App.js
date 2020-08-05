@@ -1,24 +1,32 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Header, Footer } from "./Layout";
-import ImageCarousel from "./Carousel/Carousel";
-import Contact from "./Contact/Contact";
-import Team from "./Team/Team";
+import Home from "./Home";
+import Tours from "./Tours";
+import Rent from "./Rent";
+import Retail from "./Retail";
 
 import "./App.css";
 
 class App extends React.Component {
   render() {
     return (
-      <div className="main">
-        <Header />
-        <div className="content">
-          <ImageCarousel />
-          <Contact />
-          <Team />
-        </div>
-        <Footer />
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/tours">
+            <Tours />
+          </Route>
+          <Route path="/rent">
+            <Rent />
+          </Route>
+          <Route path="/retail">
+            <Retail />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }

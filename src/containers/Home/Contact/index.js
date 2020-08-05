@@ -13,7 +13,7 @@ const Contact = () => {
           padding: 20,
           fontSize: 20,
           fontWeight: "bold",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <p>Telephone Number</p>
@@ -26,7 +26,7 @@ const Contact = () => {
       <img
         data-aos="flip-up"
         data-aos-duration="1000"
-        src={require("../../assets/map.png")}
+        src={require("../../../assets/map.png")}
         alt="map"
         className={classNames("map-img", "map-size")}
       />

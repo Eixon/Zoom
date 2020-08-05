@@ -1,15 +1,16 @@
 import React from "react";
 import * as classNames from "classnames";
 
-import team from "../../utils/team";
+import team from "../../../utils/team";
 
 import "./Team.css";
 
 const Team = () => {
   return (
     <div className={classNames("team", "team-position")}>
-      {team.map(member => (
+      {team.map((member, index) => (
         <div
+          key={index}
           data-aos="fade-up"
           data-aos-duration="1000"
           className={classNames("team-card", "team-card-space")}
