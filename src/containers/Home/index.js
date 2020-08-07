@@ -3,16 +3,18 @@ import React from "react";
 import CustomLayout from "../Layout";
 
 import ImageCarousel from "./Carousel";
-import Contact from "./Contact";
-import Team from "./Team";
+// import Contact from "./Contact";
+import About from "./About";
+import Menu from "./Menu";
 
 const Home = () => {
   return (
     <CustomLayout>
       <div className="content">
         <ImageCarousel />
-        <Contact />
-        <Team />
+        {/* <Contact /> */}
+        <About />
+        <Menu />
       </div>
     </CustomLayout>
   );

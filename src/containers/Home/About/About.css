@@ -1,7 +1,26 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20vw;
+}
+
+.about-container p {
+  font-size: 25px;
+  text-align: justify;
+}
+
+.about-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  /* text-shadow: #000 0 0 10px; */
+}
+
 .team {
   display: flex;
   width: 100%;
-  background: #37363d;
   padding: 20px 0;
   justify-content: center;
 }
@@ -22,7 +41,6 @@
   display: flex;
   font-size: 20px;
   font-weight: bold;
-  color: #f0f2f5;
   flex-direction: column;
   justify-content: center;
   align-items: center;
